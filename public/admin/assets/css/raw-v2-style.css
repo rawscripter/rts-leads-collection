@@ -1,0 +1,380 @@
+.btn-primary, .swal2-styled.swal2-confirm {
+    background-color: #6EC1E4 !important;
+    border-color: #6EC1E4 !important;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.text-primary {
+    color: #6EC1E4 !important;
+}
+
+.btn-light-primary {
+    background-color: #6ec1e473 !important;
+    color: #6EC1E4 !important;
+}
+
+
+.btn-light-primary:hover {
+    background-color: #6EC1E4 !important;
+    color: #ffffff !important;
+}
+
+.login.login-1 .login-aside {
+    background: #47bfee57 !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+#kt_blockui_modal_custom_text_2 .modal-dialog {
+    margin-top: 150px;
+}
+
+
+.tooltip-inner {
+    background-color: #00acd6 !important;
+    /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+    color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #00acd6;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #00acd6;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #00acd6;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #00acd6;
+}
+
+
+@media (max-width: 800px) {
+    input, select, textarea {
+        font-size: 13px;
+    }
+}
+
+
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"] {
+        font-size: 13px;
+    }
+}
+
+/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"] {
+        font-size: 13px;
+    }
+}
+
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"] {
+        font-size: 13px;
+    }
+}
+
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"] {
+        font-size: 13px;
+    }
+}
+
+
+#editor .ql-editor {
+    background: #d1d1d126 !important;
+}
+
+button.ql-video {
+    display: none !important;
+}
+
+
+div#editor {
+    max-height: 350px !important;
+    overflow: scroll;
+}
+
+#kt_wizard_v2 .wizard-step {
+    width: 100% !important;
+    margin-bottom: 5px !important;;
+}
+
+.wizard.wizard-2 .wizard-nav .wizard-steps .wizard-step .wizard-wrapper {
+    padding: 10px 15px !important;
+}
+
+#kt_wizard_v2 .wizard-nav, #kt_wizard_v2 .wizard-body {
+    padding-top: 15px !important;
+}
+
+.on-clicked-redirect-to-link {
+    cursor: pointer;
+}
+
+.on-clicked-redirect-to-link:hover span {
+    color: #6EC1E4 !important;
+}
+
+
+.on-clicked-redirect-to-link:hover i {
+    color: #6EC1E4 !important;
+}
+
+.active-chat-menu {
+    background: #eceff3 !important;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 992px) {
+    .aside-secondary-enabled.aside-fixed .wrapper {
+        padding-left: 0px;
+    }
+}
+
+.aside {
+    background-color: #38414a;
+}
+
+
+.opacity-5 {
+    opacity: .5;
+}
+
+
+.hideImportant {
+    display: none !important;
+}
+
+
+.btn.btn-success {
+    background-color: #ea4d80;
+    border-color: #ea4d80;
+}
+
+.bg-success {
+    background-color: #ea4d80 !important;
+    border-color: #ea4d80 !important;
+}
+
+.symbol.symbol-light-success .symbol-label {
+    background-color: #ea4d806e;
+    color: #ea4d80;
+}
+
+.label.label-light-success {
+    color: #ea4d80;
+    background-color: #f6b2c8;
+}
+
+
+.bg-info {
+    background-color: #6EC1E4 !important;
+}
+
+.text-theme {
+    color: #6EC1E4 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+
+.tooltip-inner {
+    background-color: #ea4d80 !important; /* Red */
+    /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+}
+
+.tooltip.top .tooltip-arrow {
+    background-color: #ea4d80 !important; /* Red */
+}
+
+.tooltip.right .tooltip-arrow {
+    background-color: #ea4d80 !important; /* Red */
+}
+
+.tooltip.bottom .tooltip-arrow {
+    background-color: #ea4d80 !important; /* Red */
+}
+
+.tooltip.left .tooltip-arrow {
+    background-color: #ea4d80 !important; /* Red */
+}
+
+.btn-secondary {
+    background-color: #464E5F !important; /* Red */
+    border-color: #464E5F !important; /* Red */
+    color: #fff !important;
+}
+
+
+span.label.label-lg.label-light-primary.label-inline, span.label.font-weight-bold.label-lg.label-light-success.label-inline {
+    background: #464E5F !important; /* Red */
+    color: #fff !important; /* Red */
+}
+
+.nav.nav-tabs.nav-tabs-line .nav-link:hover:not(.disabled), .nav.nav-tabs.nav-tabs-line .nav-link.active, .nav.nav-tabs.nav-tabs-line .show > .nav-link {
+    border-bottom: 1px solid #464E5F !important
+}
+
+.nav .show > .nav-link .nav-text, .nav .nav-link:hover:not(.disabled) .nav-text, .nav .nav-link.active .nav-text, .nav .show > .nav-link .nav-icon i, .nav .nav-link:hover:not(.disabled) .nav-icon i, .nav .nav-link.active .nav-icon i {
+    color: #464E5F !important
+
+}
+
+.menu-item .menu-link.active {
+    background-color: #38414a !important;
+}
+
+
+a.text-primary:hover, a.text-primary:focus {
+    color: #ea4d80 !important;
+}
+
+
+#respondentPage .nav.nav-tabs.nav-tabs-line.nav-tabs-line-3x .nav-link:hover:not(.disabled),
+#respondentPage .nav.nav-tabs.nav-tabs-line.nav-tabs-line-3x .nav-link.active,
+#respondentPage .nav.nav-tabs.nav-tabs-line.nav-tabs-line-3x .show > .nav-link {
+    border-bottom: 3px solid #ea4d80 !important;
+}
+
+a.linkified {
+    color: #fff !important;
+}
+
+/*
+ *  STYLE 3
+ */
+
+#style-3::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+    background-color: #ea4d80;
+}
+
+@media (max-width: 768px) {
+
+    .menu-item .menu-link.active {
+        background-color: #fff !important;
+    }
+
+    .menu-item .menu-link.active .text-white {
+        color: #464E5F !important;
+    }
+
+    #noMargin {
+        margin: 0px !important;
+    }
+
+}
+
+.datatable-bg-draft {
+    background: #38414a;
+    color: #fff;
+}
+
+.datatable-bg-pending {
+    background: #d1cb25;
+    color: #fff;
+}
+
+.datatable-bg-completed {
+    background: #1dac4f;
+    color: #fff;
+}
+
+.datatable-bg-active {
+    background: #1dac4f;
+    color: #fff;
+}
+
+.datatable-bg-canceled {
+    background: #f64e60;
+    color: #fff;
+}
+
+.btn-grey {
+    background-color: #464E5F;
+    border-color: #464E5F;
+    color: #fff;
+}
+
+.btn-grey:hover {
+    color: #fff;
+}
+
+a:hover {
+    color: #ea4d80;
+}
+
+.text-black {
+    color: #000000;
+}
+
+
+.wizard.wizard-4 .wizard-nav .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-wrapper .wizard-number {
+    background-color: #ea4d80 !important;
+    color: #fff !important;
+}
+
+.wizard.wizard-2 .wizard-nav .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-icon .svg-icon svg g [fill],
+.wizard.wizard-2 .wizard-nav .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-icon .svg-icon svg g [fill] {
+    /*fill: #ea4d80 !important;*/
+    fill: #ea4d80 !important;
+}
+
+.wizard.wizard-4 .wizard-nav .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-wrapper .wizard-label .wizard-title {
+    color: #212121 !important;
+}
+
+.wizard.wizard-4 .wizard-nav .wizard-steps .wizard-step .wizard-wrapper .wizard-number {
+    background-color: rgba(234, 77, 128, 0.23) !important;
+    color: #212121 !important;
+}
+
+.btn.btn-success:hover:not(.btn-text), .btn.btn-success:focus:not(.btn-text), .btn.btn-success.focus:not(.btn-text) {
+    color: #ffffff;
+    background-color: #e64c7e !important;
+    border-color: #dc4b7d !important;
+}
