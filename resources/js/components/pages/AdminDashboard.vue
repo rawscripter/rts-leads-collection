@@ -116,14 +116,14 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <RandomChart></RandomChart>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <PieChart></PieChart>

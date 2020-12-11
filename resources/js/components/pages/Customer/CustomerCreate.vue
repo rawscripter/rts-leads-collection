@@ -1,7 +1,7 @@
 <template>
 
     <div class="row">
-        <div class="col-8 m-auto">
+        <div class="col-md-8 m-auto">
             <div class="card">
                 <div class="card-body">
                     <h3>Add New Lead</h3>
@@ -39,6 +39,7 @@
                         <div class="form-group">
                             <label for="feedback">FeedBack <small>(Required)</small></label>
                             <select name="" v-model="customer.feedback" id="feedback" class="form-control">
+                                <option value="-1">Already Have Camera</option>
                                 <option value="0">Not Interested</option>
                                 <option value="1">Interested</option>
                                 <option value="2">Highly Interested</option>

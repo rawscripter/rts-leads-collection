@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acfc043f-c0f8-42a1-8d50-9ece63392a23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rts2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rts2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/AdminDashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/AdminDashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/Customer/CustomerCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/Customer/CustomerCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/Customer/CustomerEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/Customer/CustomerEdit.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +142,10 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/stevebauman/location" />
+      <path value="$PROJECT_DIR$/vendor/maxmind-db/reader" />
+      <path value="$PROJECT_DIR$/vendor/maxmind/web-service-common" />
+      <path value="$PROJECT_DIR$/vendor/geoip2/geoip2" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lHNWmtPfK5xPXEWBIg41WHtI1U" />
@@ -196,7 +207,8 @@
       <workItem from="1607290437142" duration="237000" />
       <workItem from="1607322519500" duration="9936000" />
       <workItem from="1607349228963" duration="26000" />
-      <workItem from="1607679660646" duration="2082000" />
+      <workItem from="1607679660646" duration="2765000" />
+      <workItem from="1607701050942" duration="1077000" />
     </task>
     <servers />
   </component>
