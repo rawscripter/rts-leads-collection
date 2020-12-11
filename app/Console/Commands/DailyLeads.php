@@ -47,8 +47,8 @@ class DailyLeads extends Command
         $leads['interested'] = Customer::where('feedback', '1')->where('created_at', Carbon::today())->get()->count();
         $leads['highly_interested'] = Customer::where('feedback', '2')->where('created_at', Carbon::today())->get()->count();
         $leads['urgent'] = Customer::where('feedback', '3')->where('created_at', Carbon::today())->get()->count();
-
-        Mail::to('shuvogoswamii@gmail.com')->send(new DailyLeadsEntryMail($leads));
+        $emails = ['shuvogoswamii@gmail.com', 'prokas003@gmail.com'];
+        Mail::to($emails)->send(new DailyLeadsEntryMail($leads));
 
         $this->info('Email Sent.' . $leads);
 

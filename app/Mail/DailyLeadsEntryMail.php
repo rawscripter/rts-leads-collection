@@ -30,7 +30,7 @@ class DailyLeadsEntryMail extends Mailable
      */
     public function build()
     {
-        return $this->from('decentboydevil@gmail.com', 'RTS Marketing App')
+        return $this->from('info@rawtechsociety.com', 'RTS Marketing App')
             ->view('email.DailyTotalLeadsEmail', [
                 'data' => $this->totalLeads
             ]);

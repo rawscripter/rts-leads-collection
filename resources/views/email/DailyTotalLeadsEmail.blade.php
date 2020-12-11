@@ -242,10 +242,9 @@
                                             <ul>
                                                 <li style="font-size: 22px; line-height: 1.5; word-break: break-word; text-align: left; mso-line-height-alt: 33px;">
                                                     <span
-                                                        style="font-size: 22px;"><sub>Today's New Leads Customers: {{$data['new_leads']}} </sub></span>
+                                                        style="font-size: 22px;"><sub>Today's New Leads: {{$data['new_leads']}} </sub></span>
                                                 </li>
                                             </ul>
-                                            <p style="line-height: 1.5; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: 18px; margin: 0;"></p>
                                             <ul>
                                                 <li style="font-size: 22px; line-height: 1.5; word-break: break-word; text-align: left; mso-line-height-alt: 33px;">
                                                     <span

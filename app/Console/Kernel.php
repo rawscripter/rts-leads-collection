@@ -25,8 +25,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('dailyLeads:email')
-            ->daily()
+        $schedule->command('dailyLeads:email')g
+            ->days([0, 1, 2, 3, 4])
             ->between('20.00', '22.00');
     }
 
