@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="902a60e6-a16c-47fb-8839-89bc191ef153" name="RTS" url="http://rawtechsociety.com">
+        <fileTransfer rootFolder="/public_html/softwares/marketing.rawtechsociety.com" host="rawtechsociety.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

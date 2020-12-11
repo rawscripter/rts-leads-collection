@@ -7,7 +7,6 @@
                 <div class="card-body">
                     <h3>Update Lead</h3>
                     <br>
-
                     <loading :active.sync="isLoading"
                              :can-cancel="true"
                              :loader="'dots'"
