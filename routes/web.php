@@ -18,6 +18,8 @@ Route::get('/clear-cache', function () {
 Route::get('/motivational/quote', [\App\Http\Controllers\DashboardController::class, 'motivationalQuote']);
 
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('/export/customers', [\App\Http\Controllers\CustomerController::class, 'exportData']);
+
     Route::get('/user/create', [\App\Http\Controllers\DashboardController::class, 'register'])->middleware('auth');
 
     Route::get('/get/dashboard/data', [\App\Http\Controllers\DashboardController::class, 'dashboardData']);

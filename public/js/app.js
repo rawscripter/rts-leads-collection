@@ -2995,6 +2995,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "CustomerIndex",
   data: function data() {
@@ -3023,6 +3026,9 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     serverRequestUrl: function serverRequestUrl() {
       return '/customers/json/data?feedback=' + this.filter;
+    },
+    exportServerRequestUrl: function exportServerRequestUrl() {
+      return '/export/customers?feedback=' + this.filter;
     }
   },
   methods: {
@@ -21620,7 +21626,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".page-link {\n  cursor: pointer !important;\n}\n.VueTables__limit-field {\n  position: absolute;\n  right: 15px;\n  top: -5px;\n}\n.form-group.form-inline.pull-left.VueTables__search {\n  width: 50% !important;\n  float: right !important;\n  right: 0;\n}\n.form-group.form-inline.pull-left.VueTables__search {\n  width: 50% !important;\n  float: left !important;\n}\n", ""]);
+exports.push([module.i, ".page-link {\n  cursor: pointer !important;\n}\n.VueTables__limit-field {\n  position: absolute;\n  right: 15px;\n  top: -5px;\n}\n.form-group.form-inline.pull-left.VueTables__search {\n  width: 50% !important;\n  float: right !important;\n  right: 0;\n}\n.form-group.form-inline.pull-left.VueTables__search {\n  width: 50% !important;\n  float: left !important;\n}\nselect#filter_by_feedback {\n  padding: 3px;\n  border: 1px solid #dadada;\n  border-radius: 10px;\n}\n", ""]);
 
 // exports
 
@@ -71459,7 +71465,7 @@ var render = function() {
                 [_vm._v("\n                    New Lead\n                ")]
               ),
               _vm._v(" "),
-              _c("div", [
+              _c("div", { staticClass: "d-flex align-items-center" }, [
                 _c("label", { attrs: { for: "filter_by_feedback" } }, [
                   _vm._v(
                     "\n                        Filter By Feedback:\n                        "
@@ -71517,6 +71523,20 @@ var render = function() {
                         _vm._v("Urgent")
                       ])
                     ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "ml-3" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: {
+                        href: _vm.exportServerRequestUrl,
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("Export Data")]
                   )
                 ])
               ])

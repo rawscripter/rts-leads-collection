@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\CustomerExport;
 use App\Http\Resources\CustomerResource;
 use App\Models\Customer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Maatwebsite\Excel\Facades\Excel;
 
 class CustomerController extends Controller
 {
@@ -133,6 +135,13 @@ class CustomerController extends Controller
         }
 
         return response()->json($res);
+
+    }
+
+    public function exportData(Request $request)
+    {
+        $feedback = $request->feedback;
+        return Excel::download(new CustomerExport($feedback), 'customers-' . date('d-m-Y') . '.xls');
 
     }
 }

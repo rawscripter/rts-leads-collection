@@ -7,7 +7,7 @@
                     <router-link :to="{name:'customer-create'}" class="btn btn-primary">
                         New Lead
                     </router-link>
-                    <div>
+                    <div class="d-flex align-items-center">
                         <label for="filter_by_feedback">
                             Filter By Feedback:
                             <select v-model="filter" id="filter_by_feedback">
@@ -19,6 +19,9 @@
                                 <option value="3">Urgent</option>
                             </select>
                         </label>
+                        <div class="ml-3">
+                            <a :href="exportServerRequestUrl" class="btn btn-primary" target="_blank">Export Data</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,6 +85,9 @@ export default {
         serverRequestUrl() {
             return '/customers/json/data?feedback=' + this.filter;
         },
+        exportServerRequestUrl() {
+            return '/export/customers?feedback=' + this.filter;
+        },
     },
     methods: {
         deleteCustomerRecord(id) {
@@ -134,5 +140,10 @@ export default {
 .form-group.form-inline.pull-left.VueTables__search {
     width: 50% !important;
     float: left !important;
+}
+select#filter_by_feedback {
+    padding: 3px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
 }
 </style>
