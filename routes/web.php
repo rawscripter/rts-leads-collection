@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\MotivationalQuote;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
@@ -13,7 +15,7 @@ Route::get('/clear-cache', function () {
     return 'cache cleared';
 });
 
-
+Route::get('/motivational/quote', [\App\Http\Controllers\DashboardController::class, 'motivationalQuote']);
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/user/create', [\App\Http\Controllers\DashboardController::class, 'register'])->middleware('auth');

@@ -6,6 +6,11 @@
                 <div class="card-body">
                     <h3>Add New Lead</h3>
                     <br>
+
+                    <loading :active.sync="isLoading"
+                             :can-cancel="true"
+                             :loader="'dots'"
+                             :is-full-page="false"></loading>
                     <form action="" v-on:submit.prevent="addNewCustomer">
                         <div class="form-group">
                             <label for="name"> Name <small>(Required)</small></label>
@@ -69,6 +74,7 @@ export default {
     name: "CustomerCreate",
     data() {
         return {
+            isLoading: false,
             customer: {
                 name: null,
                 organization: null,
@@ -82,6 +88,7 @@ export default {
     },
     methods: {
         addNewCustomer() {
+            this.isLoading = true;
             axios.post(`/customer/store`, this.customer)
                 .then(res => {
                     if (res.data.success) {
@@ -90,6 +97,7 @@ export default {
                     } else {
                         toastr.error('Somethings is wrong.')
                     }
+                    this.isLoading = false;
                 })
                 .catch(err => toastr.error('Somethings is wrong.'))
         }

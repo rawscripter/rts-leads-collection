@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\MotivationalQuote;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -55,26 +56,31 @@ class DashboardController extends Controller
         $customers = $customers->filter(function ($item) {
             if ($item->feedback == '-1') {
                 $item->feedback = 'Already Have Camera';
-                $item->color = '#2709b0';
+                $item->color = '#003B46';
             } else if ($item->feedback == '0') {
                 $item->feedback = 'Not Interested';
-                $item->color = '#030303';
+                $item->color = '#07575B';
             } else if ($item->feedback == '1') {
                 $item->feedback = 'Interested';
-                $item->color = '#00d0ff';
+                $item->color = '#98DBc6';
             } else if ($item->feedback == '2') {
                 $item->feedback = 'Highly Interested';
-                $item->color = '#00ff7e';
-
+                $item->color = '#5bc8ac';
             } else if ($item->feedback == '3') {
-                $item->feedback = 'Urgent Interested';
-                $item->color = '##cf081f';
-
+                $item->feedback = 'Urgent';
+                $item->color = '#F18d9e';
             }
             return $item;
 
         });
         return $customers;
 
+    }
+
+    public function motivationalQuote()
+    {
+        $quote = MotivationalQuote::inRandomOrder()->first();
+        $res['quote'] = $quote;
+        return response()->json($quote);
     }
 }
