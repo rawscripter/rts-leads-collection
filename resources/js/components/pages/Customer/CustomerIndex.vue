@@ -2,12 +2,27 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-12 mb-5 text-right">
+                <div class="col-12 mb-5 d-flex justify-content-between">
+
                     <router-link :to="{name:'customer-create'}" class="btn btn-primary">
                         New Lead
                     </router-link>
+                    <div>
+                        <label for="filter_by_feedback">
+                            Filter By Feedback:
+                            <select v-model="filter" id="filter_by_feedback">
+                                <option value="" selected>All</option>
+                                <option value="-1">Already Have Camera</option>
+                                <option value="0">Not Interested</option>
+                                <option value="1">Interested</option>
+                                <option value="2">Highly Interested</option>
+                                <option value="3">Urgent</option>
+                            </select>
+                        </label>
+                    </div>
                 </div>
             </div>
+            <br>
             <v-server-table :url="serverRequestUrl" ref="myTable"
                             :columns="columns"
                             :options="options">
@@ -32,6 +47,7 @@ export default {
     name: "CustomerIndex",
     data() {
         return {
+            filter: '',
             columns: [
                 'id',
                 'name',
@@ -64,7 +80,7 @@ export default {
     },
     computed: {
         serverRequestUrl() {
-            return '/customers/json/data';
+            return '/customers/json/data?feedback=' + this.filter;
         },
     },
     methods: {

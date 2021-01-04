@@ -28,6 +28,9 @@ class CustomerController extends Controller
                 ->orWhere('feedback', 'like', '%' . $request['query'] . '%')
                 ->orWhere('id', 'like', '%' . $request['query'] . '%');
         }
+        if ($request['feedback']) {
+            $customers->where('feedback', 'like', '%' . $request['feedback'] . '%');
+        }
 
         $customers->orderBy('id', 'DESC');
 

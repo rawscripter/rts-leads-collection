@@ -2980,10 +2980,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "CustomerIndex",
   data: function data() {
     return {
+      filter: '',
       columns: ['id', 'name', 'organization', 'phone', 'address', 'feedback', 'created_at', 'user.name', 'action'],
       options: {
         headings: {
@@ -3006,7 +3022,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     serverRequestUrl: function serverRequestUrl() {
-      return '/customers/json/data';
+      return '/customers/json/data?feedback=' + this.filter;
     }
   },
   methods: {
@@ -21547,7 +21563,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".small {\n  width: 100%;\n  margin: 50px auto;\n}\n", ""]);
+exports.push([module.i, ".small {\n  width: 100%;\n  margin: 50px auto;\n}\r\n", ""]);
 
 // exports
 
@@ -21566,7 +21582,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".small {\n  width: 100%;\n  margin: 50px auto;\n}\n", ""]);
+exports.push([module.i, ".small {\n  width: 100%;\n  margin: 50px auto;\n}\r\n", ""]);
 
 // exports
 
@@ -21585,7 +21601,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".small {\n  width: 100%;\n  margin: 50px auto;\n}\n", ""]);
+exports.push([module.i, ".small {\n  width: 100%;\n  margin: 50px auto;\n}\r\n", ""]);
 
 // exports
 
@@ -71432,7 +71448,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c(
             "div",
-            { staticClass: "col-12 mb-5 text-right" },
+            { staticClass: "col-12 mb-5 d-flex justify-content-between" },
             [
               _c(
                 "router-link",
@@ -71441,11 +71457,75 @@ var render = function() {
                   attrs: { to: { name: "customer-create" } }
                 },
                 [_vm._v("\n                    New Lead\n                ")]
-              )
+              ),
+              _vm._v(" "),
+              _c("div", [
+                _c("label", { attrs: { for: "filter_by_feedback" } }, [
+                  _vm._v(
+                    "\n                        Filter By Feedback:\n                        "
+                  ),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.filter,
+                          expression: "filter"
+                        }
+                      ],
+                      attrs: { id: "filter_by_feedback" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.filter = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "", selected: "" } }, [
+                        _vm._v("All")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "-1" } }, [
+                        _vm._v("Already Have Camera")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "0" } }, [
+                        _vm._v("Not Interested")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "1" } }, [
+                        _vm._v("Interested")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "2" } }, [
+                        _vm._v("Highly Interested")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "3" } }, [
+                        _vm._v("Urgent")
+                      ])
+                    ]
+                  )
+                ])
+              ])
             ],
             1
           )
         ]),
+        _vm._v(" "),
+        _c("br"),
         _vm._v(" "),
         _c("v-server-table", {
           ref: "myTable",
@@ -98456,8 +98536,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Rawscripter\Desktop\rr\rts2\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Rawscripter\Desktop\rr\rts2\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\Users\shuvo\Desktop\rts\rts-leads-collection\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\shuvo\Desktop\rts\rts-leads-collection\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
