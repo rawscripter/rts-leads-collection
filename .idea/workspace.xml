@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acfc043f-c0f8-42a1-8d50-9ece63392a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Exports/CustomerExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CustomerExportResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rts2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rts2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dark-logo-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/AdminDashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/AdminDashboard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/pages/Customer/CustomerIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/Customer/CustomerIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/master-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/master-layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +178,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../payment-box" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -236,7 +233,10 @@
       <workItem from="1609747026641" duration="2238000" />
       <workItem from="1609750158228" duration="44000" />
       <workItem from="1609750228425" duration="1196000" />
-      <workItem from="1609751440767" duration="361000" />
+      <workItem from="1609751440767" duration="1037000" />
+      <workItem from="1610005003262" duration="183000" />
+      <workItem from="1610210775164" duration="698000" />
+      <workItem from="1610211509251" duration="1279000" />
     </task>
     <servers />
   </component>

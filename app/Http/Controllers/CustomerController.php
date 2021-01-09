@@ -133,15 +133,12 @@ class CustomerController extends Controller
         } else {
             $res['success'] = false;
         }
-
         return response()->json($res);
-
     }
 
     public function exportData(Request $request)
     {
         $feedback = $request->feedback;
         return Excel::download(new CustomerExport($feedback), 'customers-' . date('d-m-Y') . '.xls');
-
     }
 }

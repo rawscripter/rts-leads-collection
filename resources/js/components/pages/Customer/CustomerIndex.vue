@@ -2,15 +2,15 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-12 mb-5 d-flex justify-content-between">
+                <div class="col-12 mb-5 d-flex justify-content-between flex-sm-column-mb">
 
                     <router-link :to="{name:'customer-create'}" class="btn btn-primary">
                         New Lead
                     </router-link>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center flex-sm-column-mb filter_and_exort_area">
                         <label for="filter_by_feedback">
                             Filter By Feedback:
-                            <select v-model="filter" id="filter_by_feedback">
+                            <select v-model="filter" class="max-width-100" id="filter_by_feedback">
                                 <option value="" selected>All</option>
                                 <option value="-1">Already Have Camera</option>
                                 <option value="0">Not Interested</option>
@@ -19,8 +19,8 @@
                                 <option value="3">Urgent</option>
                             </select>
                         </label>
-                        <div class="ml-3">
-                            <a :href="exportServerRequestUrl" class="btn btn-primary" target="_blank">Export Data</a>
+                        <div class="ml-3 max-width-100">
+                            <a :href="exportServerRequestUrl" class="btn btn-primary export_button" target="_blank">Export Data</a>
                         </div>
                     </div>
                 </div>
@@ -141,9 +141,23 @@ export default {
     width: 50% !important;
     float: left !important;
 }
+
 select#filter_by_feedback {
     padding: 3px;
     border: 1px solid #dadada;
     border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .flex-sm-column-mb {
+        flex-direction: column;
+    }
+    .filter_and_exort_area{
+        margin-top: 20px;
+    }
+
+    .max-width-100{
+        width: 100%;
+    }
 }
 </style>
